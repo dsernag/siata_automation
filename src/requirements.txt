@@ -1,0 +1,9 @@
+selenium==4.5.0
+ipykernel
+beautifulsoup4
+pandas
+numpy
+matplotlib
+seaborn
+mysql-connector-python
+sqlalchemy
