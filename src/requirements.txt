@@ -6,4 +6,5 @@ numpy
 matplotlib
 seaborn
 mysql-connector-python
+MySQL-python
 sqlalchemy
