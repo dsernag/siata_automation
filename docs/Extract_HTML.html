@@ -14596,7 +14596,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <h1 id="SIATA-AUTOMATION-DOWNLOAD-SYSTEM-(EXTRACT)">SIATA AUTOMATION DOWNLOAD SYSTEM (EXTRACT)<a class="anchor-link" href="#SIATA-AUTOMATION-DOWNLOAD-SYSTEM-(EXTRACT)">&#182;</a></h1><p><b>By: <em>David Serna</em></b><br>
 <b><em>Data Scientist and Data Engineer</em></b></p>
 <p>If you want to know more about the project, what is SIATA and the motivations to make this repository, please <a href="https://github.com/dsernag/siata_automation">visit</a> it</p>
-<p>Also, here is my LinkedIn profile: <a href="https://www.linkedin.com/in/dsernag/"><img width="25px" src="imgs\linkedIn_PNG32.png" alt="LinkedinLogo"></a></p>
+<p>Also, here is my LinkedIn profile: <a href="https://www.linkedin.com/in/dsernag/"><img width="25px" src="imgs/linkedIn_PNG32.png" alt="LinkedinLogo"></a></p>
 <p>This is open source code, so you can use it, but remember to be etic and if is possibly, cite it.©</p>
 
 </div>
@@ -14735,8 +14735,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Side-bar-menu">Side bar menu<a class="anchor-link" href="#Side-bar-menu">&#182;</a></h3><p>After we login, at left side there is a menu bar. This panel represents the navigation bar of the website, so we need to know how to automate the access</p>
-<h1 id=""><img src="imgs\home.PNG" width="800" /><a class="anchor-link" href="#">&#182;</a></h1><p>After analyze the HTML structure the elements of the left menu are part of a unordered list taged as &quot;panel&quot; class:</p>
-<img src="imgs\leftpanelhtml.PNG" width="600" />
+<h1 id=""><img src="imgs/home.PNG" width="800" /><a class="anchor-link" href="#">&#182;</a></h1><p>After analyze the HTML structure the elements of the left menu are part of a unordered list taged as &quot;panel&quot; class:</p>
+<img src="imgs/leftpanelhtml.PNG" width="600" />
 <p>Let's obtain the <code>id</code> of each <code>li</code></p>
 
 </div>
@@ -14821,7 +14821,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Required-fields">Required fields<a class="anchor-link" href="#Required-fields">&#182;</a></h3><p>To complete a donwload, we must provide a reason (more than 10 words), the time interval, the variable which we desire (PM 2.5 in this case) and the stations. This is how looks the interface:</p>
-<img src="imgs\input_download.PNG" width="800px">
+<img src="imgs/input_download.PNG" width="800px">
 
 </div>
 </div>
@@ -14878,7 +14878,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Stations-and-kind-of-variable">Stations and kind of variable<a class="anchor-link" href="#Stations-and-kind-of-variable">&#182;</a></h4><p>To scrap the kind of variables we are going to search in the HTML source code an <code>input</code> tag <code>type</code> &quot;radio&quot;</p>
-<img src="imgs\kindvariable.png" width="1000px">
+<img src="imgs/kindvariable.png" width="1000px">
 <p>These are the <code>value</code> of each <code>input</code> tag:</p>
 
 </div>
@@ -15003,7 +15003,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Now, to select the stations we need to identify how many stations are</p>
-<img src="imgs\stations.png" width="1000px">
+<img src="imgs/stations.png" width="1000px">
 <p>The way to search it is through <code>class name</code>. Every checkbox is from the class &quot;select-all-class&quot;. We also need to provide a number to later click the element. The box &quot;Seleccionar Todas&quot; is the element 0.</p>
 
 </div>
@@ -15111,7 +15111,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Query-request">Query request<a class="anchor-link" href="#Query-request">&#182;</a></h3><p>Ok, by default the donwload will be procesed as csv files. So we must only click to make the request.</p>
-<img src="imgs\request.PNG" width="300px">
+<img src="imgs/request.PNG" width="300px">
 <p>However this is the tricky part. SIATA produces a single csv file for each month of each station, in this example, there is not much data, so the query will be fast. But, if you want to download the historic of e:g: precipitation, this request could last forever and never load the csv download links (because the granularity of precipitation is much finer, and there are more stations involved and are also older).</p>
 <p>So be cautious in your automation process, perhaps is better to make this in two or three steps 😊</p>
 
@@ -15167,7 +15167,7 @@ Wall time: 2.33 s
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Obtain-and-download-data">Obtain and download data<a class="anchor-link" href="#Obtain-and-download-data">&#182;</a></h3><p>To obtain the links, we analyze the HTML content and we identify that every download button class is &quot;btn btn-info&quot; and are located in an anchor tag</p>
-<img src="imgs\download.png" width="800px">
+<img src="imgs/download.png" width="800px">
 <p>So, obtain those links!</p>
 
 </div>
